@@ -1,4 +1,13 @@
 package instruments;
 
-public class Saxaphone {
+public class Saxaphone extends Instruments{
+
+    public Saxaphone(String material, String color, String type) {
+        super(material, color, type);
+    }
+
+    @Override
+    public String play() {
+        return null;
+    }
 }
