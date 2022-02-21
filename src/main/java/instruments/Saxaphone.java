@@ -10,4 +10,14 @@ public class Saxaphone extends Instruments{
     public String play(String data) {
         return null;
     }
+
+    @Override
+    public int buyingPrice() {
+        return 0;
+    }
+
+    @Override
+    public int sellingPrice() {
+        return 0;
+    }
 }

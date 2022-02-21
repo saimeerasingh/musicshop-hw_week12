@@ -9,6 +9,16 @@ public class Guitar extends Instruments {
 
     @Override
     public String play(String data) {
-        return null;
+        return "ting ting";
+    }
+
+    @Override
+    public int buyingPrice() {
+        return 0;
+    }
+
+    @Override
+    public int sellingPrice() {
+        return 0;
     }
 }

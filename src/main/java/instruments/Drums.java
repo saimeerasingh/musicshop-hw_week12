@@ -20,4 +20,14 @@ public class Drums extends Instruments {
     public String getDrumAccessories() {
         return drumAccessories;
     }
+
+    @Override
+    public int buyingPrice() {
+        return 0;
+    }
+
+    @Override
+    public int sellingPrice() {
+        return 0;
+    }
 }

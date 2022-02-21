@@ -1,6 +1,7 @@
 package shop;
 
 import behaviours.ISell;
+import instruments.Violin;
 
 import java.util.ArrayList;
 
@@ -10,7 +11,7 @@ public class Shop implements ISell {
 
     private ArrayList<ISell> stock;
 
-    public Shop(String name, ArrayList<ISell> stock) {
+    public Shop(String name, ArrayList<Violin> stock) {
         this.name = name;
         this.stock = new ArrayList<ISell>();
     }
@@ -26,7 +27,9 @@ public class Shop implements ISell {
         return 0;
     }
 
-    public void addItem(ISell item){this.stock.add(item);}
 
-    public void removeItem(ISell item){this.stock.remove(item);}
+
+    public int addItem(ISell item){this.stock.add(item); return this.stock.size();}
+
+    public int removeItem(ISell item){this.stock.remove(item);return this.stock.size();}
 }
