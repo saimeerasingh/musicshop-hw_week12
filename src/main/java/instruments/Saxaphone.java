@@ -7,7 +7,7 @@ public class Saxaphone extends Instruments{
     }
 
     @Override
-    public String play() {
+    public String play(String data) {
         return null;
     }
 }

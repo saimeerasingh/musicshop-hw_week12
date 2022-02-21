@@ -12,7 +12,7 @@ public class DrumsTest {
 
     @Before
     public void before(){
-        drums = new Drums("Brass","Black","Acoustic Drum");
+        drums = new Drums("Brass","Black","Acoustic Drum","Drum Sticks");
     }
 
     @Test
@@ -28,6 +28,11 @@ public class DrumsTest {
     @Test
     public void canGetType(){
         assertEquals("Acoustic Drum",drums.getType());
+    }
+
+    @Test
+    public void canGetDrumAccessories(){
+        assertEquals("Drum Sticks",drums.getDrumAccessories());
     }
 
 

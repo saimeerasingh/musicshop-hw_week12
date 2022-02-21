@@ -25,4 +25,8 @@ public class Shop implements ISell {
     public int sellingPrice() {
         return 0;
     }
+
+    public void addItem(ISell item){this.stock.add(item);}
+
+    public void removeItem(ISell item){this.stock.remove(item);}
 }
